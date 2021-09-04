@@ -36,7 +36,9 @@ fun MainScreen() {
         verticalArrangement = Arrangement.SpaceEvenly,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        GreetingList(greetingListState,  { greetingListState.add("Daniel") })
+        GreetingList(greetingListState) {
+            greetingListState.add("Daniel")
+        }
     }
 }
 
